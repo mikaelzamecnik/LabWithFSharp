@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Helpers.txt" />
     <Compile Include="Program.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
 </Project>
