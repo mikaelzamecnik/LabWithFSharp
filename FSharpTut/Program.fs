@@ -1,6 +1,6 @@
 ﻿open System
 
-let loop_stuff() =
+let loop_stuff() = 
 
     for i = 1 to 10 do
         printfn "%i" i
@@ -35,7 +35,7 @@ let string_stuff() =
 
     let str4 = str1 + " " + str2
 
-    printfn "Lenght : %i" (String.length str4)
+    printfn "Length : %i" (String.length str4)
     printfn "%c" str1.[1]
     printfn "1st Word : %s" (str1.[0..3])
 
@@ -43,13 +43,13 @@ let string_stuff() =
     printfn "Commas : %s" upper_str
 
     printfn "Any upper : %b" (String.exists (fun c -> Char.IsUpper(c)) str1)
-    
+
     printfn "Number : %b" (String.forall (fun c -> Char.IsDigit(c)) "1234")
 
     let string1 = String.init 10 (fun i -> i.ToString())
     printfn "Numbers : %s" string1
 
-    String.iter(fun c -> printfn "%c" c) "Print me"
+    String.iter(fun c -> printfn "%c" c) "Print me" 
 
 
 string_stuff()
